@@ -104,7 +104,7 @@ const DotsLoading = ({
   }));
 };
 
-var lightCopyIcon = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M5.5 4H5V4.5V16.592C5 16.8682 5.22386 17.092 5.5 17.092C5.77614 17.092 6 16.8682 6 16.592V5H15.4562C15.7323 5 15.9562 4.77614 15.9562 4.5C15.9562 4.22386 15.7323 4 15.4562 4H5.5ZM8.67388 6.91166H8.17388V7.41166V19.5037V20.0037H8.67388H18.6301H19.1301V19.5037V7.41166V6.91166H18.6301H8.67388ZM9.17388 19.0037V7.91166H18.1301V19.0037H9.17388Z\" fill=\"white\"/>\n</svg>";
+var lightCopyIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fillRule='evenodd' clipRule='evenodd' d='M5.5 4H5V4.5V16.592C5 16.8682 5.22386 17.092 5.5 17.092C5.77614 17.092 6 16.8682 6 16.592V5H15.4562C15.7323 5 15.9562 4.77614 15.9562 4.5C15.9562 4.22386 15.7323 4 15.4562 4H5.5ZM8.67388 6.91166H8.17388V7.41166V19.5037V20.0037H8.67388H18.6301H19.1301V19.5037V7.41166V6.91166H18.6301H8.67388ZM9.17388 19.0037V7.91166H18.1301V19.0037H9.17388Z' fill='white'/%3e%3c/svg%3e\";\n  export default img;";
 
 const Icon = ({
   size = 24,
@@ -9016,7 +9016,7 @@ const TextArea = ({
   }));
 };
 
-var addIcon = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"11.5334\" y=\"19\" width=\"14\" height=\"0.933333\" rx=\"0.466667\" transform=\"rotate(-90 11.5334 19)\" fill=\"#5A616B\"/>\n<rect x=\"5\" y=\"11.5333\" width=\"14\" height=\"0.933333\" rx=\"0.466667\" fill=\"#5A616B\"/>\n</svg>";
+var addIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='11.5334' y='19' width='14' height='0.933333' rx='0.466667' transform='rotate(-90 11.5334 19)' fill='%235A616B'/%3e%3crect x='5' y='11.5333' width='14' height='0.933333' rx='0.466667' fill='%235A616B'/%3e%3c/svg%3e\";\n  export default img;";
 
 const Menu = ({
   filters,
@@ -9294,7 +9294,7 @@ const isTheSameMonth = (date1, date2) => {
   return _date1Month === _date2Month && _date1Year === _date2Year;
 };
 
-var errorIcon = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"12\" cy=\"12\" r=\"7.5\" stroke=\"#D62E2E\"/>\n<path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M15.8669 8.89866C16.0625 8.70436 16.0713 8.38016 15.8864 8.17455C15.7014 7.96894 15.3929 7.95978 15.1973 8.15409L12.0076 11.3216L8.84172 8.16556C8.64641 7.97086 8.33783 7.97935 8.1525 8.18454C7.96716 8.38973 7.97525 8.71391 8.17056 8.90861L11.2979 12.0263L8.166 15.1365C7.97033 15.3308 7.96161 15.655 8.14653 15.8606C8.33144 16.0662 8.63996 16.0754 8.83563 15.8811L12.0063 12.7325L15.1636 15.88C15.3589 16.0747 15.6675 16.0662 15.8528 15.861C16.0381 15.6558 16.0301 15.3317 15.8347 15.1369L12.7159 12.0278L15.8669 8.89866Z\" fill=\"#D62E2E\"/>\n</svg>";
+var errorIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='7.5' stroke='%23D62E2E'/%3e%3cpath fillRule='evenodd' clipRule='evenodd' d='M15.8669 8.89866C16.0625 8.70436 16.0713 8.38016 15.8864 8.17455C15.7014 7.96894 15.3929 7.95978 15.1973 8.15409L12.0076 11.3216L8.84172 8.16556C8.64641 7.97086 8.33783 7.97935 8.1525 8.18454C7.96716 8.38973 7.97525 8.71391 8.17056 8.90861L11.2979 12.0263L8.166 15.1365C7.97033 15.3308 7.96161 15.655 8.14653 15.8606C8.33144 16.0662 8.63996 16.0754 8.83563 15.8811L12.0063 12.7325L15.1636 15.88C15.3589 16.0747 15.6675 16.0662 15.8528 15.861C16.0381 15.6558 16.0301 15.3317 15.8347 15.1369L12.7159 12.0278L15.8669 8.89866Z' fill='%23D62E2E'/%3e%3c/svg%3e\";\n  export default img;";
 
 const getDatesBetweenDates = (startDate, endDate) => {
   let dates = [];
@@ -9910,9 +9910,9 @@ const DatePicker = props => {
   }))))));
 };
 
-var arrowDown = "<svg  width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.27637 3.33333L8.27637 12.6667\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n<path d=\"M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n</svg>";
+var arrowDown = "var img = \"data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.27637 3.33333L8.27637 12.6667' stroke='%23181E26' strokeLinecap='round'/%3e%3cpath d='M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
 
-var arrowUp = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" transform='rotate(180)'>\n<path d=\"M8.27637 3.33333L8.27637 12.6667\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n<path d=\"M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n</svg>";
+var arrowUp = "var img = \"data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' transform='rotate(180)'%3e%3cpath d='M8.27637 3.33333L8.27637 12.6667' stroke='%23181E26' strokeLinecap='round'/%3e%3cpath d='M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
 
 const iconButtonStyle$1 = {
   height: '28px',
@@ -10092,9 +10092,9 @@ function Data(props) {
   }))));
 }
 
-var chevronLeft = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 6L9 12L15 18\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n</svg>";
+var chevronLeft = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15 6L9 12L15 18' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
 
-var chevronRight = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"#181E26\" strokeLinecap=\"round\"/>\n</svg>";
+var chevronRight = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 18L15 12L9 6' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
 
 const iconButtonLeftStyle = {
   height: "32px",
@@ -10730,7 +10730,7 @@ const ProgressBar = ({
   })));
 };
 
-var arrowLeft = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19 12.4142L5 12.4142\" stroke=\"#67718B\" stroke-linecap=\"round\"/>\n<path d=\"M10.3433 6.68628L4.68641 12.3431L10.3433 18\" stroke=\"#67718B\" stroke-linecap=\"round\"/>\n</svg>";
+var arrowLeft = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M19 12.4142L5 12.4142' stroke='%2367718B' stroke-linecap='round'/%3e%3cpath d='M10.3433 6.68628L4.68641 12.3431L10.3433 18' stroke='%2367718B' stroke-linecap='round'/%3e%3c/svg%3e\";\n  export default img;";
 
 const BackButton = ({
   label,
