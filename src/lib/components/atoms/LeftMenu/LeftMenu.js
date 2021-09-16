@@ -1,39 +1,37 @@
-import React from 'react'
-import {Illustrations} from '../../../assets'
-import './LeftMenu.scss'
+import React from "react";
+import "./LeftMenu.scss";
 
 const defaultOptions = [
   {
-    name: 'Surveys',
+    name: "Surveys",
     onClick: () => {},
   },
   {
-    name: 'Hey Yabble',
+    name: "Hey Yabble",
     onClick: () => {},
   },
   {
-    name: 'MyPanel',
+    name: "MyPanel",
     onClick: () => {},
   },
-]
+];
 
 const LeftMenu = ({
   options = defaultOptions,
   selectedIndex = 0,
   setSelectedIndex = () => {},
+  logo,
 }) => {
   const onClick = (index, action) => {
-    setSelectedIndex(index)
-    action()
-  }
+    setSelectedIndex(index);
+    action();
+  };
   return (
     <div className="left-menu">
       <div className="left-menu__header">
-        <img
-          src={Illustrations.LogoWhite}
-          alt="Hey Yabble Logo"
-          className="left-menu__logo"
-        />
+        {logo && (
+          <img src={logo} alt="Hey Yabble Logo" className="left-menu__logo" />
+        )}
       </div>
       <div className="left-menu__divider"></div>
       <div className="left-menu__content">
@@ -43,13 +41,13 @@ const LeftMenu = ({
             onClick={() => onClick(i, option.onClick)}
             className={`left-menu__button ${
               i === selectedIndex
-                ? 'left-menu__route--selected'
-                : 'left-menu__route'
+                ? "left-menu__route--selected"
+                : "left-menu__route"
             }`}
           >
             <div
               className={`left-menu__line ${
-                i === selectedIndex && 'left-menu__line--selected'
+                i === selectedIndex && "left-menu__line--selected"
               }`}
             ></div>
             <span>{option.name}</span>
@@ -57,7 +55,7 @@ const LeftMenu = ({
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export {LeftMenu}
+export { LeftMenu };
