@@ -1,28 +1,27 @@
-import React from 'react'
-
-import chevronLeft from '../../../../assets/icons/svg/chevron-left.svg'
-import chevronRight from '../../../../assets/icons/svg/chevron-right.svg'
-import {SecondaryIconOnlyButton} from '../../Buttons/Buttons'
-import './Pagination.scss'
+import React from "react";
+import chevronLeft from "../../../../assets/icons/svg/chevron-left.svg";
+import chevronRight from "../../../../assets/icons/svg/chevron-right.svg";
+import { SecondaryIconOnlyButton } from "../../Buttons/Buttons";
+import "./Pagination.scss";
 
 const iconButtonLeftStyle = {
-  height: '32px',
-  width: '32px',
-  marginLeft: '10px',
-}
-const iconButtonRightStyle = {height: '32px', width: '32px', margin: '4px'}
-const iconStyles = {height: '20px', width: '20px'}
+  height: "32px",
+  width: "32px",
+  marginLeft: "10px",
+};
+const iconButtonRightStyle = { height: "32px", width: "32px", margin: "4px" };
+const iconStyles = { height: "20px", width: "20px" };
 
-const Pagination = ({paginationData, setPage}) => {
-  const {total, from, to, page, pages} = paginationData
+const Pagination = ({ paginationData, setPage }) => {
+  const { total, from, to, page, pages } = paginationData;
   const prev = () => {
-    const _prev = page - 1
-    if (_prev > 0) setPage(_prev)
-  }
+    const _prev = page - 1;
+    if (_prev > 0) setPage(_prev);
+  };
   const next = () => {
-    const _next = page + 1
-    if (_next <= pages) setPage(_next)
-  }
+    const _next = page + 1;
+    if (_next <= pages) setPage(_next);
+  };
 
   return (
     <div className="table-component-pagination__container">
@@ -33,7 +32,7 @@ const Pagination = ({paginationData, setPage}) => {
         <span className="table-component-pagination__text--strong">{`${to} `}</span>
         <span className="table-component-pagination__text">{`of ${total} reports`}</span>
         <SecondaryIconOnlyButton
-          {...{iconStyles}}
+          {...{ iconStyles }}
           disabled={page === 1}
           onClick={prev}
           style={iconButtonLeftStyle}
@@ -41,7 +40,7 @@ const Pagination = ({paginationData, setPage}) => {
           testId="chevronLeft"
         />
         <SecondaryIconOnlyButton
-          {...{iconStyles}}
+          {...{ iconStyles }}
           onClick={next}
           disabled={page === pages}
           style={iconButtonRightStyle}
@@ -50,7 +49,7 @@ const Pagination = ({paginationData, setPage}) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;
