@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Face Face Default 1`] = `
+<svg
+  fill="none"
+  height="24"
+  style={
+    Object {
+      "marginRight": "1em",
+    }
+  }
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="12"
+    cy="12"
+    r="11.5"
+    stroke="#5A616B"
+  />
+  <path
+    d="M16.7992 13.7969C16.7992 16.4478 14.6502 18.5969 11.9992 18.5969C9.34825 18.5969 7.19922 16.4478 7.19922 13.7969"
+    stroke="#5A616B"
+  />
+  <circle
+    cx="9.00078"
+    cy="9.00078"
+    fill="#5A616B"
+    r="0.7"
+    stroke="#5A616B"
+  />
+  <circle
+    cx="15.0008"
+    cy="9.00078"
+    fill="#5A616B"
+    r="0.7"
+    stroke="#5A616B"
+  />
+</svg>
+`;

@@ -1,0 +1,11 @@
+@use '../settings/variables';
+
+.a-card-title {
+  color: $theme-primary-text-color;
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}

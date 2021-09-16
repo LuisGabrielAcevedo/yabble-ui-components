@@ -1,0 +1,4383 @@
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.button--link:active, .button--link:focus-visible {
+  color: var(--button-primary-hover-background);
+  text-decoration: underline;
+  text-decoration-color: var(--button-primary-hover-background);
+}
+
+.button--secondary:active, .button--secondary:focus-visible {
+  background-color: var(--button-secondary-active-background);
+  border-color: var(--button-primary-active-background);
+  color: var(--button-primary-active-background);
+}
+
+.button {
+  min-width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+}
+.button--primary {
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-color);
+  font-family: "SuisseIntl Regular", sans-serif;
+  border-radius: 4px;
+}
+.button--primary__icon {
+  background: var(--theme-color-absence) !important;
+}
+.button--primary__icon--disabled {
+  background: var(--theme-text-on-disabled) !important;
+}
+.button--primary:hover {
+  background-color: var(--button-primary-hover-background);
+}
+.button--primary:active {
+  background-color: var(--button-primary-active-background);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+}
+.button--primary:focus-visible {
+  background-color: var(--button-primary-active-background);
+}
+.button--primary:disabled {
+  background-color: var(--button-primary-disabled-background);
+  color: var(--button-primary-disabled-color);
+  cursor: not-allowed;
+}
+.button--primary--loading {
+  background-color: var(--button-primary-active-background) !important;
+}
+.button--primary--danger {
+  background-color: var(--button-primary-danger-background);
+  color: var(--theme-color-absence);
+  font-family: "SuisseIntl Regular", sans-serif;
+  border-radius: 4px;
+}
+.button--primary--danger:hover {
+  background-color: var(--button-primary-danger-hover-background);
+}
+.button--primary--danger:active {
+  background-color: var(--button-primary-danger-active-background);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+}
+.button--primary--danger:focus-visible {
+  background-color: var(--button-primary-danger-active-background);
+}
+.button--primary--danger:disabled {
+  background-color: var(--button-primary-disabled-background);
+  color: var(--button-primary-disabled-color);
+  cursor: not-allowed;
+}
+.button--primary--danger--loading {
+  background-color: var(--button-primary-danger-active-background) !important;
+}
+.button--secondary {
+  background-color: transparent;
+  color: var(--button-secondary-color);
+  font-family: "SuisseIntl Regular", sans-serif;
+  border: 1px solid var(--button-primary-border);
+  border-radius: 4px;
+}
+.button--secondary:hover {
+  background-color: var(--button-secondary-hover-background);
+}
+.button--secondary:active {
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+}
+.button--secondary:disabled {
+  background-color: var(--button-secondary-disabled-background);
+  color: var(--button-primary-disabled-color);
+  border-color: var(--button-primary-border-color);
+  cursor: not-allowed;
+}
+.button--secondary--loading {
+  background-color: var(--button-secondary-loading-background) !important;
+  border-color: var(--button-primary-active-background) !important;
+}
+.button--secondary--icon-only {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  min-width: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.button--secondary--icon-only__icon {
+  background: var(--theme-primary-text-color) !important;
+}
+.button--secondary--icon-only__icon--disabled {
+  background: var(--theme-text-on-disabled) !important;
+}
+.button--secondary--icon-only:hover {
+  background-color: var(--button-secondary-icon-only-hover-background);
+}
+.button--secondary--icon-only:active {
+  background-color: var(--button-secondary-icon-only-active-background);
+  border-color: none;
+  color: initial;
+  box-shadow: none;
+}
+.button--secondary--icon-only:disabled {
+  cursor: not-allowed;
+  background: transparent;
+  border-color: none;
+  color: initial;
+  box-shadow: none;
+}
+.button--tertiary--icon-only {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.button--tertiary--icon-only__icon {
+  background: var(--primary-color) !important;
+}
+.button--tertiary--icon-only:hover {
+  background-color: rgba(44, 108, 237, 0.12);
+}
+.button--tertiary--icon-only:focus-visible {
+  background-color: var(--button-secondary-active-background);
+}
+.button--tertiary--icon-only:active {
+  background-color: var(--button-secondary-active-background);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+}
+.button--tertiary--icon-only--selected {
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+  background-color: rgba(44, 108, 237, 0.12);
+  cursor: auto;
+}
+.button--tertiary--icon-only--selected:hover, .button--tertiary--icon-only--selected:focus-visible, .button--tertiary--icon-only--selected:active {
+  background-color: rgba(44, 108, 237, 0.12);
+}
+.button--subtle {
+  background-color: var(--button-secondary-icon-only-hover-background);
+  color: var(--theme-secondary-text-color);
+  font-family: "SuisseIntl Regular", sans-serif;
+  border-radius: 4px;
+}
+.button--subtle:hover {
+  background-color: var(--button-primary-disabled-background);
+}
+.button--subtle:focus-visible {
+  background-color: var(--button-secondary-icon-only-active-background);
+}
+.button--subtle:active {
+  background-color: var(--button-secondary-icon-only-active-background);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+}
+.button--subtle:disabled {
+  background-color: var(--button-primary-disabled-background);
+  color: var(--button-primary-disabled-color);
+  cursor: not-allowed;
+}
+.button--subtle-icon-only {
+  border: 1px solid var(--button-primary-disabled-background);
+  background-color: transparent;
+}
+.button--subtle-icon-only:hover {
+  background-color: var(--button-primary-disabled-background);
+}
+.button--subtle-icon-only:active {
+  background-color: var(--button-subtle-active-background);
+}
+.button--subtle-icon-only:disabled {
+  background-color: var(--button-primary-disabled-background);
+  cursor: not-allowed;
+}
+.button--subtle-icon-only__icon {
+  background: var(--theme-primary-text-color) !important;
+}
+.button--subtle-icon-only__icon--disabled {
+  background: var(--theme-text-on-disabled) !important;
+}
+.button--subtle-link {
+  color: var(--theme-secondary-text-color);
+  height: 20px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.button--subtle-link:hover {
+  text-decoration-color: var(--button-primary-disabled-color);
+}
+.button--subtle-link:focus-visible {
+  color: var(--theme-primary-text-color);
+  text-decoration: none;
+}
+.button--subtle-link:disabled {
+  text-decoration: none;
+  color: var(--button-primary-disabled-color);
+  cursor: not-allowed;
+}
+.button--link {
+  min-width: auto;
+  color: var(--primary-color);
+  height: 20px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  border: 2px solid transparent;
+  background-color: transparent;
+  padding: 0;
+}
+.button--link:hover {
+  text-decoration: underline;
+}
+.button--link:active {
+  border-color: var(--theme-primary-focus);
+  border-radius: 2px;
+}
+.button--link:disabled {
+  text-decoration: none;
+  color: var(--button-primary-disabled-color);
+  cursor: not-allowed;
+}
+.button--round {
+  border-radius: 25px;
+}
+.button--circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.card {
+  max-width: 734px;
+  padding: 32px;
+  background-color: var(--theme-color-absence);
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.input {
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: "1rem";
+  padding: 8px 12px;
+  height: 40px;
+  font-weight: 400;
+  transition-duration: 0.3s;
+}
+.input--primary {
+  border: 1px solid var(--input-primary-border-color);
+  background-color: var(--input-primary-background);
+  color: var(--input-primary-text-color);
+}
+.input--primary:hover {
+  border-color: var(--input-secondary-border-color);
+}
+.input--primary::placeholder {
+  color: var(--input-primary-placeholder-color);
+}
+.input--primary:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+  outline: 0 none;
+  background-color: var(--input-focus-background);
+}
+.input--primary:disabled {
+  border-color: var(--input-disabled-border-color);
+  cursor: not-allowed;
+  pointer-events: all;
+}
+.input--error {
+  border-color: var(--input-error-text-color);
+}
+.input--disabled {
+  color: var(--theme-text-on-disabled);
+}
+.input--disabled::placeholder {
+  color: var(--theme-text-on-disabled);
+}
+
+.input-date__icon {
+  bottom: 8px;
+  right: 8px;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.textarea {
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: "1rem";
+  padding: 8px 12px;
+  height: 60px;
+  font-weight: 400;
+  resize: vertical;
+  transition-duration: 0.3s;
+}
+.textarea--primary {
+  border-color: var(--input-primary-border-color);
+  background-color: var(--input-primary-background);
+  color: var(--input-primary-text-color);
+}
+.textarea--primary:hover {
+  border-color: var(--input-secondary-border-color);
+}
+.textarea--primary::placeholder {
+  color: var(--input-primary-placeholder-color);
+}
+.textarea--primary:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+  outline: 0 none;
+  background-color: var(--input-focus-background);
+}
+.textarea--primary:disabled {
+  border-color: var(--input-disabled-border-color);
+  cursor: not-allowed;
+  pointer-events: all;
+}
+.textarea--error {
+  border-color: var(--input-error-text-color);
+}
+.textarea--disabled {
+  color: var(--theme-text-on-disabled);
+}
+.textarea--disabled::placeholder {
+  color: var(--theme-text-on-disabled);
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.response {
+  border: 1px solid var(--responses-border-color);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 4px;
+}
+.response__text {
+  word-break: break-all;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--responses-text-color);
+  margin: 0px 0px 12px 0px;
+  text-align: left;
+  word-break: normal;
+}
+.response__tag {
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: var(--responses-text-color);
+  display: inline;
+  border: 1px solid var(--responses-tag-border-color);
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 4px;
+}
+.response__face-tag-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2em;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.dropdown__menu-content {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: var(--theme-color-absence);
+  border-radius: 8px;
+  padding: 10px 4px;
+  filter: drop-shadow(0px 3px 10px rgba(24, 30, 38, 0.15));
+  width: 224px;
+}
+.dropdown__menu-content-nested {
+  position: absolute;
+  right: -220px;
+  top: 42px;
+  background: var(--theme-color-absence);
+  border-radius: 8px;
+  padding: 10px 4px;
+  filter: drop-shadow(0px 3px 10px rgba(24, 30, 38, 0.15));
+  width: 224px;
+  z-index: 2;
+}
+.dropdown__menu-item {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  color: var(--dropdown-menu-item-color);
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.dropdown__menu-item:hover {
+  background-color: var(--dropdown-menu-item-hover-background);
+  color: var(--dropdown-menu-item-hover-color);
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.popup {
+  position: relative;
+}
+.popup__button {
+  min-width: 32px !important;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.select {
+  border-radius: 4px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: "1rem";
+  padding: 8px 26px 8px 12px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-width: 1px;
+  border-style: solid;
+  transition-duration: 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.select__option {
+  color: var(--input-primary-text-color);
+  padding: 6px;
+  z-index: 10;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: "1rem";
+}
+.select__icon {
+  position: absolute;
+  pointer-events: none;
+  right: 8px;
+  top: 50px;
+}
+.select__icon__path {
+  stroke: var(--input-primary-text-color);
+}
+.select__icon__path--disabled {
+  stroke: var(--theme-text-on-disabled);
+}
+.select::-ms-expand {
+  display: none;
+}
+.select--primary {
+  border-color: var(--input-primary-border-color);
+  background-color: var(--input-primary-background);
+  color: var(--input-primary-placeholder-color);
+}
+.select--primary:hover {
+  border-color: var(--input-secondary-border-color);
+}
+.select--primary:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--theme-primary-focus) 0px 1px 4px, var(--theme-primary-focus) 0px 0px 0px 3px;
+  outline: 0 none;
+  background-color: var(--input-focus-background);
+}
+.select--primary:disabled {
+  border-color: var(--input-disabled-border-color);
+  cursor: not-allowed;
+  pointer-events: all;
+}
+.select--error {
+  border-color: var(--input-error-text-color);
+}
+.select--disabled {
+  color: var(--theme-text-on-disabled);
+}
+.select--with-value {
+  color: var(--input-primary-text-color);
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.circle-loading {
+  display: flex;
+  align-items: center;
+}
+.circle-loading__loader-spinner {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: transparent;
+  display: inline-block;
+  text-indent: -12345px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--theme-color-absence);
+  border-left-color: var(--theme-loading-spinner-border-default) !important;
+  -webkit-animation: spinner 700ms infinite linear;
+  -moz-animation: spinner 700ms infinite linear;
+  -ms-animation: spinner 700ms infinite linear;
+  -o-animation: spinner 700ms infinite linear;
+  animation: spinner 700ms infinite linear;
+}
+.circle-loading__text {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "SuisseIntl Regular", sans-serif;
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.label, .label-container__label-tag {
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  color: var(--theme-primary-text-color);
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+}
+.label-container__label-tag--disabled {
+  color: var(--theme-text-on-disabled);
+}
+
+.label--disabled {
+  color: var(--theme-text-on-disabled);
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 30, 38, 0.7);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.modal-container__content {
+  background: #ffffff;
+  box-shadow: 0px 9px 16px rgba(24, 30, 38, 0.14);
+  border-radius: 4px;
+  margin-top: 142px;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.dots-loading {
+  display: flex;
+}
+.dots-loading__dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  background-color: var(--theme-color-absence);
+  -webkit-animation: dots 1.5s infinite ease-in-out;
+  -moz-animation: dots 1.5s infinite ease-in-out;
+  -ms-animation: dots 1.5s infinite ease-in-out;
+  -o-animation: dots 1.5s infinite ease-in-out;
+  animation: dots 1.5s infinite ease-in-out;
+}
+.dots-loading__dot:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.dots-loading__dot:nth-of-type(3) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@keyframes dots {
+  15% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.loader-main {
+  width: 250px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-main__svg {
+  width: 130px;
+  height: 130px;
+  overflow: visible;
+}
+.loader-main__circle-wrapper {
+  -webkit-animation: loader-main-circle-animation-y-axis 1.8s ease-in-out 0s infinite normal;
+  -moz-animation: loader-main-circle-animation-y-axis 1.8s ease-in-out 0s infinite normal;
+  -ms-animation: loader-main-circle-animation-y-axis 1.8s ease-in-out 0s infinite normal;
+  -o-animation: loader-main-circle-animation-y-axis 1.8s ease-in-out 0s infinite normal;
+  animation: loader-main-circle-animation-y-axis 1.8s ease-in-out 0s infinite normal;
+}
+.loader-main__circle {
+  -webkit-animation: loader-main-circle-animation-x-axis 1.8s ease-in-out 0s infinite normal;
+  -moz-animation: loader-main-circle-animation-x-axis 1.8s ease-in-out 0s infinite normal;
+  -ms-animation: loader-main-circle-animation-x-axis 1.8s ease-in-out 0s infinite normal;
+  -o-animation: loader-main-circle-animation-x-axis 1.8s ease-in-out 0s infinite normal;
+  animation: loader-main-circle-animation-x-axis 1.8s ease-in-out 0s infinite normal;
+  fill: var(--theme-primary-text-color);
+}
+.loader-main__circle--inverted {
+  fill: var(--theme-color-absence);
+}
+.loader-main__rectangle {
+  -webkit-animation: loader-main-rectangle-animation 1.8s ease-in-out 0s infinite normal;
+  -moz-animation: loader-main-rectangle-animation 1.8s ease-in-out 0s infinite normal;
+  -ms-animation: loader-main-rectangle-animation 1.8s ease-in-out 0s infinite normal;
+  -o-animation: loader-main-rectangle-animation 1.8s ease-in-out 0s infinite normal;
+  animation: loader-main-rectangle-animation 1.8s ease-in-out 0s infinite normal;
+  -webkit-transform-origin: 49% 49%;
+  -moz-transform-origin: 49% 49%;
+  -ms-transform-origin: 49% 49%;
+  -o-transform-origin: 49% 49%;
+  transform-origin: 49% 49%;
+  fill: var(--theme-primary-text-color);
+}
+.loader-main__rectangle--inverted {
+  fill: var(--theme-color-absence);
+}
+.loader-main--small {
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  transform: scale(0.2);
+}
+.loader-main--regular {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
+}
+.loader-main--medium {
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.loader-main--large {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@keyframes loader-main-rectangle-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  15%, 20% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  35%, 45% {
+    -webkit-transform: rotate(190deg);
+    -moz-transform: rotate(190deg);
+    -ms-transform: rotate(190deg);
+    -o-transform: rotate(190deg);
+    transform: rotate(190deg);
+    -webkit-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -moz-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -ms-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -o-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+  }
+  55%, 56% {
+    -webkit-transform: rotate(115deg);
+    -moz-transform: rotate(115deg);
+    -ms-transform: rotate(115deg);
+    -o-transform: rotate(115deg);
+    transform: rotate(115deg);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  70%, 100% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes loader-main-circle-animation-x-axis {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  15%, 31% {
+    -webkit-transform: translateX(43px);
+    -moz-transform: translateX(43px);
+    -ms-transform: translateX(43px);
+    -o-transform: translateX(43px);
+    transform: translateX(43px);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  35%, 45% {
+    -webkit-transform: translateX(78px);
+    -moz-transform: translateX(78px);
+    -ms-transform: translateX(78px);
+    -o-transform: translateX(78px);
+    transform: translateX(78px);
+    -webkit-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -moz-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -ms-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -o-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+  }
+  60% {
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+    transform: translateX(-60px);
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -moz-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -ms-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -o-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -moz-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -ms-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -o-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -moz-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -ms-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -o-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+  }
+}
+@keyframes loader-main-circle-animation-y-axis {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  15%, 31% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  35%, 45% {
+    -webkit-transform: translateY(-9px);
+    -moz-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-animation-timing-function: cubic-bezier(0.86, 0.01, 0.63, 0.62);
+    -moz-animation-timing-function: cubic-bezier(0.86, 0.01, 0.63, 0.62);
+    -ms-animation-timing-function: cubic-bezier(0.86, 0.01, 0.63, 0.62);
+    -o-animation-timing-function: cubic-bezier(0.86, 0.01, 0.63, 0.62);
+    animation-timing-function: cubic-bezier(0.86, 0.01, 0.63, 0.62);
+  }
+  60% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -moz-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -ms-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    -o-animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+    animation-timing-function: cubic-bezier(0.58, 0.58, 0.61, 1);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -moz-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -ms-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    -o-animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.42, 0.42);
+  }
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -moz-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -ms-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    -o-animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+    animation-timing-function: cubic-bezier(0.38, 0.37, 0.53, 1);
+  }
+}
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.field-error {
+  font-family: "SuisseIntl Regular", sans-serif;
+  line-height: 22px;
+  font-size: 12px;
+  margin: 0;
+  color: var(--input-error-text-color);
+}
+.field-error--disabled {
+  color: var(--theme-text-on-disabled);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.icon {
+  display: inline-block;
+  background: var(--theme-primary-text-color);
+}
+.icon--disabled {
+  background: var(--theme-text-on-disabled);
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #e7eaee;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.badge {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--theme-primary-text-color);
+  font-family: "SuisseIntl Medium", sans-serif;
+  color: var(--theme-color-absence);
+  text-transform: capitalize;
+  padding: 2px 5px 3px;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.primary-header {
+  height: 56px;
+  border-bottom: 1px solid #eceff3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+}
+.primary-header__left-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.primary-header__title {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "SuisseIntl Regular", sans-serif;
+}
+.primary-header__logo {
+  margin-right: 32px;
+}
+.primary-header__logo-divider {
+  border-right: 1px solid #eceff3;
+  height: 100%;
+  width: 2px;
+}
+
+.primary-header-back {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.primary-header-back__icon {
+  margin-right: 11px;
+}
+.primary-header-back__text {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  color: #67718b;
+}
+.primary-header-back__divider {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 11px;
+}
+
+.primary-layout-container {
+  padding-top: 56px;
+  position: relative;
+}
+.primary-layout-container__background {
+  position: absolute;
+  overflow: hidden;
+  height: 306px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.primary-layout-container__rotate {
+  transform: scale(3.5);
+}
+.primary-layout-container__row {
+  display: flex;
+  height: 200%;
+  transform: rotate(-40deg);
+}
+.primary-layout-container__section1 {
+  background-color: #50b167;
+  flex: 1.15;
+}
+@media (max-width: 1400px) {
+  .primary-layout-container__section1 {
+    flex: 1.2;
+  }
+}
+.primary-layout-container__section2 {
+  background-color: #b7f7cc;
+  flex: 1;
+}
+.primary-layout-container__content {
+  position: absolute;
+  padding-top: 116px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.avatar {
+  background: #50b167;
+  border-radius: 54px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "SuisseIntl Regular", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.left-menu {
+  background-color: var(--primary-color);
+  width: 230px;
+  height: 100%;
+}
+.left-menu__header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 54px;
+}
+.left-menu__divider {
+  border: 1px solid var(--theme-color-absence);
+  opacity: 0.1;
+  width: 100%;
+}
+.left-menu__content {
+  padding-top: 40px;
+}
+.left-menu__button {
+  color: var(--button-primary-color);
+  width: 218px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 22px;
+  font-family: "SuisseIntl Regular", sans-serif;
+  transition-property: padding;
+  transition-duration: 0.6s;
+  position: relative;
+}
+.left-menu__route {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.left-menu__route--selected {
+  background-color: #0d47bb;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.left-menu__route:hover {
+  background-color: rgba(13, 71, 187, 0.4);
+  padding-left: 25px;
+}
+.left-menu__route:active {
+  background-color: rgba(13, 71, 187, 0.56);
+  padding-left: 25px;
+}
+.left-menu__line {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 40px;
+}
+.left-menu__line--selected {
+  background-color: var(--theme-color-absence);
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+:root {
+  /* white */
+  --white-50: #ffffff;
+  --white-60: #fcfcfd;
+  /* black */
+  --black-900: #333b49;
+  --black-910: #181e26;
+  /* red */
+  --red-500: #fd001c;
+  --red-600: #e82e2e;
+  --red-700: #d0454c;
+  --red-710: #de283e;
+  --red-720: #d62e2e;
+  --red-800: #b54248;
+  --red-900: #b72222;
+  --red-910: #95353a;
+  --red-920: #9c1d1d;
+  /* green */
+  --green-100: #b7f7cc;
+  --green-500: #44aa61;
+  --green-510: #12b767;
+  --green-700: #288e42;
+  --green-800: #367b48;
+  --green-900: #276738;
+  /* yellow */
+  --yellow-300: #e1c542;
+  --yellow-700: #cab23f;
+  --yellow-800: #b49e35;
+  /* aqua */
+  --aqua-100: #b3f1ff;
+  --aqua-110: #aff5ff;
+  --aqua-400: #3dcaea;
+  --aqua-410: #00cdef;
+  --aqua-600: #00a4c5;
+  /* purple */
+  --purple-100: #dcd4ff;
+  --purple-300: #9072ed;
+  --purple-400: #664ecc;
+  /* blue */
+  --blue-40: #f3f4f9;
+  --blue-50: #eef3fe;
+  --blue-60: #d5e2fb;
+  --blue-70: #e4ecfc;
+  --blue-100: #eef3fe;
+  --blue-101: #f6f6f8;
+  --blue-110: #b4cbf9;
+  --blue-120: #cddcfb;
+  --blue-121: #c5e2ff;
+  --blue-130: #d6dfeb;
+  --blue-140: #d4e4fc;
+  --blue-500: #1054dd;
+  --blue-600: #0843b9;
+  --blue-610: #0c4dcf;
+  --blue-700: #2c6ced;
+  --blue-900: #1b59b2;
+  /* magenta */
+  --magenta-100: #ffc7f3;
+  --magenta-200: #fa8ad2;
+  --magenta-210: #f476d3;
+  --magenta-300: #f264bf;
+  --magenta-400: #bf349b;
+  /* orange */
+  --orange-100: #ffd9c0;
+  --orange-300: #e2762d;
+  --orange-900: #ff8f43;
+  /* gray */
+  --gray-50: #f8f9fd;
+  --gray-60: #eceff3;
+  --gray-100: #d6dae1;
+  --gray-110: #e7eaee;
+  --gray-200: #bfc6d2;
+  --gray-300: #e1e2e4;
+  --gray-310: #d6d8db;
+  --gray-320: #9ea7b2;
+  --gray-340: #e5e5e5;
+  --gray-400: #c7cacc;
+  --gray-410: #67718b;
+  --gray-500: #a9acb0;
+  --gray-510: #878a8e;
+  --gray-600: #5a616b;
+  --gray-610: #6c7583;
+  /* THEME ====================== */
+  --primary-color: var(--blue-700);
+  --primary-background: var(--gray-50);
+  --theme-text-on-disabled: var(--gray-200);
+  --theme-background-on-disabled: var(--gray-50);
+  --theme-primary-focus: var(--blue-110);
+  --theme-primary-text-color: var(--black-910);
+  --theme-secondary-text-color: var(--black-900);
+  --theme-tertiary-text-color: var(--gray-410);
+  --theme-color-absence: var(--white-50);
+  --theme-loading-spinner-border-default: var(--blue-120);
+  --theme-color-error: var(--red-500);
+  --theme-color-error-alternative: var(--red-600);
+  --theme-tertiary-color: var(--green-100);
+  --theme-soft-color: var(--magenta-200);
+  --theme-alternative-color: var(--aqua-100);
+  --theme-alternative-alt-color: var(--aqua-410);
+  --theme-text-question-form-color: var(--gray-600);
+  --theme-separator-color: var(--gray-60);
+  /* Header Main */
+  --theme-header-main-background: var(--gray-60);
+  --theme-header-main-box-shadow: var(--black-900);
+  --theme-header-main-title: var(--gray-600);
+  --theme-header-beta-badge-background: var(--magenta-210);
+  /* Inputs */
+  --input-error-text-color: var(--red-720);
+  --input-primary-border-color: var(--gray-60);
+  --input-secondary-border-color: var(--gray-200);
+  --input-primary-background: var(--gray-50);
+  --input-primary-text-color: var(--black-900);
+  --input-primary-placeholder-color: var(--gray-320);
+  --input-focus-background: var(--white-50);
+  --input-disabled-border-color: var(--gray-50);
+  /* Buttons */
+  --button-primary-background: var(--primary-color);
+  --button-primary-danger-background: var(--red-720);
+  --button-primary-color: var(--white-50);
+  --button-secondary-color: var(--primary-color);
+  --button-primary-active-background: var(--blue-600);
+  --button-primary-danger-active-background: var(--red-920);
+  --button-secondary-active-background: var(--blue-120);
+  --button-secondary-icon-only-active-background: var(--gray-100);
+  --button-subtle-active-background: var(--gray-110);
+  --button-primary-hover-background: var(--blue-610);
+  --button-primary-danger-hover-background: var(--red-900);
+  --button-secondary-hover-background: var(--blue-70);
+  --button-secondary-icon-only-hover-background: var(--blue-40);
+  --button-primary-border: var(--primary-color);
+  --button-primary-disabled-background: var(--gray-60);
+  --button-secondary-disabled-background: var(--gray-50);
+  --button-primary-disabled-color: var(--gray-200);
+  --button-primary-border-color: var(--gray-200);
+  --button-secondary-loading-background: var(--blue-120);
+  /* Popup */
+  --popup-option-hover-background: var(--gray-60);
+  --popup-option-focus-visible-background: var(--gray-100);
+  --popup-option-active-background: var(--gray-100);
+  /* Responses */
+  --responses-border-color: var(--gray-60);
+  --responses-text-color: var(--black-900);
+  --responses-tag-border-color: var(--gray-100);
+  /* Dropdowns */
+  --dropdown-menu-item-color: var(--gray-610);
+  --dropdown-menu-item-hover-background: var(--blue-101);
+  --dropdown-menu-item-hover-color: var(--black-910);
+  /* Insights Form */
+  --insights-feedback-content-background: var(--blue-50);
+  --insights-feedback-content-divider: var(--blue-140);
+  --insights-feedback-secondary-text-color: var(--gray-610);
+  /* Tables */
+  --tables-row-border-bottom-color: var(--gray-60);
+  --tables-row-hover-border-bottom-color: var(--gray-50);
+  --tables-header-border-bottom-color: var(--gray-60);
+  --tables-pagination-text-color: var(--gray-610);
+  --tables-scroll-scrollbar-track-background: var(--blue-40);
+  --tables-scroll-scrollbar-thumb-background: var(--gray-100);
+  /* Insights Status Pills */
+  --insights-status-pills-draft-color: var(--gray-60);
+  --insights-status-pills-tracking-color: var(--magenta-100);
+  --insights-status-pills-processing-color: var(--blue-121);
+  --insights-status-pills-completed-color: var(--green-100);
+  /* Processing Page */
+  --processing-page-left-side-background: var(--purple-100);
+  --processing-page-right-side-background: var(--orange-900);
+  --processing-page-right-side-angle-background: var(--purple-300);
+}
+
+/* Header Main */
+/* Inputs */
+/* Buttons */
+/* Popups */
+/* Dropdowns */
+/* Responses */
+/* Insights Form */
+/* Tables */
+/* Insights Status Pills */
+/* Processing Page */
+.popup-list__content {
+  position: absolute;
+  background-color: var(--theme-color-absence);
+  min-height: 10px;
+  top: 30px;
+  right: 0;
+  width: 140px;
+  z-index: 100;
+  border-radius: 8px;
+  filter: drop-shadow(0px 3px 10px rgba(24, 30, 38, 0.15));
+  padding: 4px;
+}
+.popup-list__content__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color-absence);
+  outline: none;
+  border: none;
+  height: 32px;
+  width: 100%;
+  cursor: pointer;
+  font-family: "SuisseIntl Regular", sans-serif;
+  border-radius: 4px;
+}
+.popup-list__content__option:hover {
+  background-color: var(--popup-option-hover-background);
+}
+.popup-list__content__option:focus-visible {
+  background-color: var(--popup-option-focus-visible-background);
+  border: 1px solid transparent;
+}
+.popup-list__content__option:active {
+  background-color: var(--popup-option-active-background);
+}

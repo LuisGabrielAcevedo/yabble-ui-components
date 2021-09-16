@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Modal Default Modal 1`] = `
+<div
+  className="modal-container"
+  data-testid="modal-container"
+  onClick={[Function]}
+>
+  <div
+    className="modal-container__content"
+    onClick={[Function]}
+  >
+    <h3
+      style={
+        Object {
+          "color": "#5a616b",
+          "fontFamily": "SuisseIntl Regular",
+          "fontSize": "16px",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": "28px",
+          "margin": 0,
+          "marginTop": "10px",
+          "padding": 40,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is a modal component.
+    </h3>
+  </div>
+</div>
+`;

@@ -1,0 +1,55 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.primary-header {
+  height: 56px;
+  border-bottom: 1px solid #eceff3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  &__left-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-family-primary;
+  }
+  &__logo {
+    margin-right: 32px;
+  }
+  &__logo-divider {
+    border-right: 1px solid #eceff3;
+    height: 100%;
+    width: 2px;
+  }
+}
+
+.primary-header-back {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__icon {
+    margin-right: 11px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: $font-family-primary;
+    color: #67718b;
+  }
+  &__divider {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 11px;
+  }
+}

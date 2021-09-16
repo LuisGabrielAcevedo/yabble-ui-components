@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Texarea Text Area 1`] = `
+<div
+  className="u-flex-column "
+>
+  <textarea
+    className="textarea textarea--primary "
+    placeholder="Write something"
+    style={Object {}}
+    value=""
+  />
+</div>
+`;

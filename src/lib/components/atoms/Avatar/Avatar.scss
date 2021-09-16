@@ -1,0 +1,17 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.avatar {
+  background: #50b167;
+  border-radius: 54px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: $font-family-primary;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+}

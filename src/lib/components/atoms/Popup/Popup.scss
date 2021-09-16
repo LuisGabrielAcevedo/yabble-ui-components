@@ -1,0 +1,10 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+@import '../../../style/tools/mixins';
+
+.popup {
+  position: relative;
+  &__button {
+    min-width: 32px !important;
+  }
+}

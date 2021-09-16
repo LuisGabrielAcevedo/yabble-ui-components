@@ -1,0 +1,11 @@
+@import '../../../style/theme/theme';
+@import '../../../style/tools/mixins';
+
+.icon {
+  display: inline-block;
+  background: $theme-primary-text-color;
+
+  &--disabled {
+    background: $theme-text-on-disabled;
+  }
+}

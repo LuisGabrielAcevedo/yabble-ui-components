@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Badge Default Badge 1`] = `
+<span
+  className="badge "
+  style={Object {}}
+>
+  Lorem ipsum
+</span>
+`;

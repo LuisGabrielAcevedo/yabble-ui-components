@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Menu Fliters Menu 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="u-pos-rel"
+  >
+    <button
+      className="button button--subtle-icon-only button--circle"
+      data-testid="add-filters"
+      disabled={false}
+      id="ddop"
+      label="Add filters"
+      onClick={[Function]}
+    >
+      <span
+        className="icon button--subtle-icon-only__icon"
+        style={
+          Object {
+            "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "height": "24px",
+            "property": "url(some-stub-svg) center center / contain no-repeat",
+            "width": "24px",
+          }
+        }
+      />
+    </button>
+  </div>
+</div>
+`;

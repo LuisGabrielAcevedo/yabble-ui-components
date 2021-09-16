@@ -1,0 +1,60 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.input {
+  box-sizing: border-box;
+  border-radius: $field-border-radius;
+  font-family: $font-family-primary;
+  font-size: $font-size-paragraph;
+  padding: 8px 12px;
+  height: 40px;
+  font-weight: 400;
+  transition-duration: 0.3s;
+
+  &--primary {
+    border: 1px solid $theme-input-primary-border-color;
+    background-color: $theme-input-primary-background;
+    color: $theme-input-primary-text-color;
+
+    &:hover {
+      border-color: $theme-input-secondary-border-color;
+    }
+
+    &::placeholder {
+      color: $theme-input-primary-placeholder-color;
+    }
+
+    &:focus {
+      border-color: $theme-primary-color;
+      box-shadow: $theme-primary-focus 0px 1px 4px,
+        $theme-primary-focus 0px 0px 0px 3px;
+      outline: 0 none;
+      background-color: $theme-input-focus-background;
+    }
+
+    &:disabled {
+      border-color: $theme-input-disabled-border-color;
+      cursor: not-allowed;
+      pointer-events: all;
+    }
+  }
+
+  &--error {
+    border-color: $theme-input-error-text-color;
+  }
+
+  &--disabled {
+    color: $theme-text-on-disabled;
+
+    &::placeholder {
+      color: $theme-text-on-disabled;
+    }
+  }
+}
+
+.input-date {
+  &__icon {
+    bottom: 8px;
+    right: 8px;
+  }
+}

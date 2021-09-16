@@ -1,0 +1,163 @@
+$theme-primary-color: var(--primary-color);
+$theme-primary-background: var(--primary-background);
+$theme-text-on-disabled: var(--theme-text-on-disabled);
+$theme-background-on-disabled: var(--theme-background-on-disabled);
+$theme-primary-focus: var(--theme-primary-focus);
+$theme-primary-text-color: var(--theme-primary-text-color);
+$theme-secondary-text-color: var(--theme-secondary-text-color);
+$theme-tertiary-text-color: var(--theme-tertiary-text-color);
+$theme-color-absence: var(--theme-color-absence);
+$theme-loading-spinner-border-default: var(
+  --theme-loading-spinner-border-default
+);
+$theme-color-error: var(--theme-color-error);
+$theme-color-error-alternative: var(--theme-color-error-alternative);
+$theme-tertiary-color: var(--theme-tertiary-color);
+$theme-alternative-color: var(--theme-alternative-color);
+$theme-alternative-alt-color: var(--theme-alternative-alt-color);
+$theme-soft-color: var(--theme-soft-color);
+$theme-text-question-form-color: var(--theme-text-question-form-color);
+$theme-separator-color: var(--theme-separator-color);
+
+/* Header Main */
+$theme-header-main-background: var(--theme-header-main-background);
+$theme-header-main-box-shadow: var(--theme-header-main-box-shadow);
+$theme-header-main-title: var(--theme-header-main-title);
+$theme-header-beta-badge-background: var(--theme-header-beta-badge-background);
+
+/* Inputs */
+$theme-input-error-text-color: var(--input-error-text-color);
+$theme-input-primary-border-color: var(--input-primary-border-color);
+$theme-input-secondary-border-color: var(--input-secondary-border-color);
+$theme-input-primary-background: var(--input-primary-background);
+$theme-input-primary-text-color: var(--input-primary-text-color);
+$theme-input-primary-placeholder-color: var(--input-primary-placeholder-color);
+$theme-input-focus-background: var(--input-focus-background);
+$theme-input-disabled-border-color: var(--input-disabled-border-color);
+
+/* Buttons */
+// - Backgound color
+$theme-button-primary-background: var(--button-primary-background);
+$theme-button-primary-danger-background: var(
+  --button-primary-danger-background
+);
+// - Text color
+$theme-button-primary-color: var(--button-primary-color);
+$theme-button-secondary-color: var(--button-secondary-color);
+// - Active backgound color
+$theme-button-primary-active-background: var(
+  --button-primary-active-background
+);
+$theme-button-primary-danger-active-background: var(
+  --button-primary-danger-active-background
+);
+$theme-button-secondary-active-background: var(
+  --button-secondary-active-background
+);
+$theme-button-secondary-icon-only-active-background: var(
+  --button-secondary-icon-only-active-background
+);
+$theme-button-subtle-active-background: var(--button-subtle-active-background);
+// - Hover backgound color
+$theme-button-primary-hover-background: var(--button-primary-hover-background);
+$theme-button-primary-danger-hover-background: var(
+  --button-primary-danger-hover-background
+);
+$theme-button-secondary-hover-background: var(
+  --button-secondary-hover-background
+);
+$theme-button-secondary-icon-only-hover-background: var(
+  --button-secondary-icon-only-hover-background
+);
+// - Border color
+$theme-button-primary-border: var(--button-primary-border);
+// - Disabled background color
+$theme-button-primary-disabled-background: var(
+  --button-primary-disabled-background
+);
+$theme-button-secondary-disabled-background: var(
+  --button-secondary-disabled-background
+);
+// - Disabled text color
+$theme-button-primary-disabled-color: var(--button-primary-disabled-color);
+// - Disabled border color
+$theme-button-primary-border-color: var(--button-primary-border-color);
+// - Loading State
+$theme-button-secondary-loading-background: var(
+  --button-secondary-loading-background
+);
+
+/* Popups */
+$popup-option-hover-background: var(--popup-option-hover-background);
+$popup-option-focus-visible-background: var(
+  --popup-option-focus-visible-background
+);
+$popup-option-active-background: var(--popup-option-active-background);
+$popup-option-focus-visible-background: var(
+  --popup-option-focus-visible-background
+);
+$popup-option-active-background: var(--popup-option-active-background);
+
+/* Dropdowns */
+$theme-dropdown-menu-item-color: var(--dropdown-menu-item-color);
+$theme-dropdown-menu-item-hover-background: var(
+  --dropdown-menu-item-hover-background
+);
+$theme-dropdown-menu-item-hover-color: var(--dropdown-menu-item-hover-color);
+
+/* Responses */
+$responses-border-color: var(--responses-border-color);
+$responses-text-color: var(--responses-text-color);
+$responses-tag-border-color: var(--responses-tag-border-color);
+
+/* Insights Form */
+$theme-insights-feedback-content-background: var(
+  --insights-feedback-content-background
+);
+$theme-insights-feedback-content-divider: var(
+  --insights-feedback-content-divider
+);
+$theme-insights-feedback-secondary-text-color: var(
+  --insights-feedback-secondary-text-color
+);
+
+/* Tables */
+$theme-tables-row-border-bottom-color: var(--tables-row-border-bottom-color);
+$theme-tables-row-hover-border-bottom-color: var(
+  --tables-row-hover-border-bottom-color
+);
+$theme-tables-header-border-bottom-color: var(
+  --tables-header-border-bottom-color
+);
+$theme-tables-pagination-text-color: var(--tables-pagination-text-color);
+$theme-tables-scroll-scrollbar-track-background: var(
+  --tables-scroll-scrollbar-track-background
+);
+$theme-tables-scroll-scrollbar-thumb-background: var(
+  --tables-scroll-scrollbar-thumb-background
+);
+
+/* Insights Status Pills */
+$theme-insights-status-pills-draft-color: var(
+  --insights-status-pills-draft-color
+);
+$theme-insights-status-pills-tracking-color: var(
+  --insights-status-pills-tracking-color
+);
+$theme-insights-status-pills-processing-color: var(
+  --insights-status-pills-processing-color
+);
+$theme-insights-status-pills-completed-color: var(
+  --insights-status-pills-completed-color
+);
+
+/* Processing Page */
+$theme-processing-page-left-side-background: var(
+  --processing-page-left-side-background
+);
+$theme-processing-page-right-side-background: var(
+  --processing-page-right-side-background
+);
+$theme-processing-page-right-side-angle-background: var(
+  --processing-page-right-side-angle-background
+);

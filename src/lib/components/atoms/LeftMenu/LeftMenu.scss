@@ -1,0 +1,67 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.left-menu {
+  background-color: $theme-primary-color;
+  width: 230px;
+  height: 100%;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    align-items: flex-start;
+    justify-content: center;
+    height: 54px;
+  }
+  &__divider {
+    border: 1px solid $theme-color-absence;
+    opacity: 0.1;
+    width: 100%;
+  }
+  &__content {
+    padding-top: 40px;
+  }
+  &__button {
+    color: $theme-button-primary-color;
+    width: 218px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 22px;
+    font-family: $font-family-primary;
+    transition-property: padding;
+    transition-duration: 0.6s;
+    position: relative;
+  }
+  &__route {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    &--selected {
+      background-color: #0d47bb;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+  &__route:hover {
+    background-color: rgba(13, 71, 187, 0.4);
+    padding-left: 25px;
+  }
+  &__route:active {
+    background-color: rgba(13, 71, 187, 0.56);
+    padding-left: 25px;
+  }
+  &__line {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 40px;
+    &--selected {
+      background-color: $theme-color-absence;
+      transition-property: background-color;
+      transition-duration: 1s;
+    }
+  }
+}

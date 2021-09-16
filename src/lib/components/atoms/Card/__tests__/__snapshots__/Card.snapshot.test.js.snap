@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Card Default Card 1`] = `
+<div
+  className="card u-flex-column"
+>
+  <h3
+    style={
+      Object {
+        "color": "#5a616b",
+        "fontFamily": "SuisseIntl Regular",
+        "fontSize": "16px",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "lineHeight": "28px",
+        "margin": 0,
+        "marginTop": "10px",
+      }
+    }
+  >
+    This is a card component.
+  </h3>
+</div>
+`;

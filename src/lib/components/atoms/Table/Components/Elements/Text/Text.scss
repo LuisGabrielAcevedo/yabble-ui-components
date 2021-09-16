@@ -1,0 +1,42 @@
+@import "../../../../../../style/settings/variables";
+@import "../../../../../../style/theme/theme";
+
+.table-element-text {
+  &__container {
+    position: absolute;
+    right: 14px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: $font-family-primary;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__tooltip {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    top: 40px;
+    width: 400px;
+  }
+
+  &__tooltip-content {
+    background: $theme-secondary-text-color;
+    color: $theme-color-absence;
+    font-family: $font-family-primary;
+    line-height: 20px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}

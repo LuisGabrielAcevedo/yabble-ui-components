@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Popup Default Popup 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="popup-container"
+  >
+    <button
+      className="button button--secondary button--secondary--icon-only"
+      data-testid="popup-button"
+      onClick={[Function]}
+      selected={false}
+      style={
+        Object {
+          "height": "32px",
+          "width": "32px",
+        }
+      }
+    >
+      <span
+        className="icon button--secondary--icon-only__icon"
+        style={
+          Object {
+            "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+            "height": "20px",
+            "property": "url(some-stub-svg) center center / contain no-repeat",
+            "width": "20px",
+          }
+        }
+      />
+    </button>
+  </div>
+</div>
+`;

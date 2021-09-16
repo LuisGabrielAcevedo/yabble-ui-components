@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Button/DangerButtonRectangle Danger Button Rectangle 1`] = `
+<button
+  className="button button--primary--danger "
+  disabled={false}
+>
+  Label
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/PrimaryButtonRectangle Primary Button Rectangle 1`] = `
+<button
+  className="button button--primary "
+  disabled={false}
+>
+  Label
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/PrimaryButtonRound Primary Button Round 1`] = `
+<button
+  className="button button--primary button--round"
+  disabled={false}
+>
+  Primary Button Round
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/PrimaryIconOnlyButton Primary Icon Only Button 1`] = `
+<button
+  className="button button--primary button--circle"
+  disabled={false}
+>
+  <span
+    className="icon button--primary__icon"
+    style={
+      Object {
+        "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "height": "24px",
+        "property": "url(some-stub-svg) center center / contain no-repeat",
+        "width": "24px",
+      }
+    }
+  />
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/PrimaryLinkButton Primary Link Button 1`] = `
+<button
+  className="button button--link"
+  disabled={false}
+>
+  Link
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/SecondaryButtonRectangle Secondary Button Rectangle 1`] = `
+<button
+  className="button button--secondary "
+  disabled={false}
+>
+  Check
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/SecondaryButtonRound Secondary Button Round 1`] = `
+<button
+  className="button button--secondary button--round"
+  disabled={false}
+>
+  Check
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/SecondaryIconOnlyButton Secondary Icon Only Button 1`] = `
+<button
+  className="button button--secondary button--secondary--icon-only"
+  disabled={false}
+>
+  <span
+    className="icon button--secondary--icon-only__icon"
+    style={
+      Object {
+        "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "height": "24px",
+        "property": "url(some-stub-svg) center center / contain no-repeat",
+        "width": "24px",
+      }
+    }
+  />
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/SubtleButton Subtle Button 1`] = `
+<button
+  className="button button--subtle"
+  disabled={false}
+>
+  Label
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/SubtleLinkButton Subtle Link Button 1`] = `
+<button
+  className="button button--subtle-link"
+>
+  Primary Button Round
+</button>
+`;
+
+exports[`Storyshots Yabble/Atoms/Button/TertiaryIconOnlyButton Tertiary Icon Only Button 1`] = `
+<button
+  className="button button--circle button--tertiary--icon-only "
+  selected={false}
+>
+  <span
+    className="icon button--tertiary--icon-only__icon"
+    style={
+      Object {
+        "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+        "height": "24px",
+        "property": "url(some-stub-svg) center center / contain no-repeat",
+        "width": "24px",
+      }
+    }
+  />
+</button>
+`;

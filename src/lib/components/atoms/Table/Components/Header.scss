@@ -1,0 +1,24 @@
+@import "../../../../style/settings/variables";
+@import "../../../../style/theme/theme";
+
+.table-component-header {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+    border-bottom: 1px solid $theme-tables-header-border-bottom-color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: $font-family-secondary;
+    font-size: 14px;
+  }
+}

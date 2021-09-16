@@ -1,0 +1,39 @@
+@import "../../../style/settings/variables";
+@import "../../../style/theme/theme";
+@import "../../../style/tools/mixins";
+
+.circle-loading {
+  display: flex;
+  align-items: center;
+
+  &__loader-spinner {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: transparent;
+    display: inline-block;
+    text-indent: -12345px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $theme-color-absence;
+    border-left-color: $theme-loading-spinner-border-default !important;
+    @include vendor-prefix(animation, spinner 700ms infinite linear);
+  }
+
+  &__text {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: $font-family-primary;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    @include vendor-prefix(transform, rotate(0deg));
+  }
+  100% {
+    @include vendor-prefix(transform, rotate(360deg));
+  }
+}

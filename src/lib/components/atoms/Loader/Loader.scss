@@ -1,0 +1,133 @@
+@import '../../../style/theme/theme';
+@import '../../../style/tools/mixins';
+
+.loader-main {
+  width: 250px; // Do not change this: edit scale in the modifiers.
+  height: 180px; // Do not change this: edit scale in the modifiers.
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__svg {
+    width: 130px; // Do not change this: edit scale in the modifiers.
+    height: 130px; // Do not change this: edit scale in the modifiers.
+    overflow: visible;
+  }
+  
+  &__circle-wrapper {
+    @include vendor-prefix(animation, loader-main-circle-animation-y-axis
+    1.8s ease-in-out 0s infinite normal);
+  }
+  
+  &__circle {
+    @include vendor-prefix(animation, loader-main-circle-animation-x-axis
+    1.8s ease-in-out 0s infinite normal);
+    fill: $theme-primary-text-color;
+
+    &--inverted {
+      fill: $theme-color-absence;
+    }
+  }
+  
+  &__rectangle {
+    @include vendor-prefix(animation, loader-main-rectangle-animation
+    1.8s ease-in-out 0s infinite normal);
+    @include vendor-prefix(transform-origin, 49% 49%); // Do not change this
+    fill: $theme-primary-text-color;
+
+    &--inverted {
+      fill: $theme-color-absence;
+    }
+  }
+
+  &--small {
+    @include vendor-prefix(transform, scale(0.2));
+  }
+
+  &--regular {
+    @include vendor-prefix(transform, scale(0.4));
+  }
+
+  &--medium {
+    @include vendor-prefix(transform, scale(0.6));
+  }
+
+  &--large {
+    @include vendor-prefix(transform, scale(0.8));
+  }
+}
+
+@keyframes loader-main-rectangle-animation {
+  0% {
+    @include vendor-prefix(transform, rotate(0deg));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  15%, 20% {
+    @include vendor-prefix(transform, rotate(45deg));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  35%, 45% {
+    @include vendor-prefix(transform, rotate(190deg));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.38,.37,.53,1));
+  }
+  55%, 56% {
+    @include vendor-prefix(transform, rotate(115deg));
+    @include vendor-prefix(animation-timing-function, ease-in-out);
+  }
+  70%, 100% {
+    @include vendor-prefix(transform, rotate(180deg));
+    @include vendor-prefix(animation-timing-function, ease-in-out);
+  }
+}
+
+@keyframes loader-main-circle-animation-x-axis {
+  0% {
+    @include vendor-prefix(transform, translateX(0));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  15%, 31% {
+    @include vendor-prefix(transform, translateX(43px));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  35%, 45% {
+    @include vendor-prefix(transform, translateX(78px));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.38,.37,.53,1));
+  }
+  60% {
+    @include vendor-prefix(transform, translateX(-60px));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.4,0,.42,.42));
+  }
+  75% {
+    @include vendor-prefix(transform, translateX(0));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.58,.58,.61,1));
+  }
+  100% {
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.38,.37,.53,1));
+  }
+}
+
+@keyframes loader-main-circle-animation-y-axis {
+  0% {
+    @include vendor-prefix(transform, translateY(0));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  15%, 31% {
+    @include vendor-prefix(transform, translateY(-15px));
+    @include vendor-prefix(animation-timing-function, linear);
+  }
+  35%, 45% {
+    @include vendor-prefix(transform, translateY(-9px));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.86,.01,.63,.62));
+  }
+  60% {
+    @include vendor-prefix(transform, translateY(100px));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.58,.58,.61,1));
+  }
+  75% {
+    @include vendor-prefix(transform, translateY(0));
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.4,0,.42,.42));
+  }
+  100% {
+    @include vendor-prefix(animation-timing-function, cubic-bezier(.38,.37,.53,1));
+  }
+}

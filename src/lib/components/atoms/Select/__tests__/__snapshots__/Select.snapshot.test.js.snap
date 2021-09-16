@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Select Simple Select 1`] = `
+<div
+  className="u-flex-column u-pos-rel "
+>
+  <select
+    className="select select--primary "
+    placeholder="Select a option"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    value=""
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select a option
+    </option>
+    <option
+      className="select__option"
+      value="Option 1"
+    >
+      Option 1
+    </option>
+    <option
+      className="select__option"
+      value="Option 2"
+    >
+      Option 2
+    </option>
+    <option
+      className="select__option"
+      value="Option 3"
+    >
+      Option 3
+    </option>
+  </select>
+  <div
+    className="select__icon"
+    style={
+      Object {
+        "top": 8,
+      }
+    }
+  >
+    <svg
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="select__icon__path null"
+        d="M6 9L12 15L18 9"
+        strokeLinecap="round"
+      />
+    </svg>
+  </div>
+</div>
+`;

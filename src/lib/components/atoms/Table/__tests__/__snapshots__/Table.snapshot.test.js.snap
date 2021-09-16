@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Table Simple Table 1`] = `
+<div
+  className="table__container"
+>
+  <div
+    className="table__scroll"
+  >
+    <div
+      className="table__scroll-content"
+    >
+      <div
+        className="table-component-header__container"
+      >
+        <div
+          className="table-component-header__item"
+          style={
+            Object {
+              "flex": "1.9 1 0%",
+            }
+          }
+        >
+          <div
+            className="table-component-header__text"
+          >
+            Project
+          </div>
+          <button
+            className="button button--secondary button--secondary--icon-only"
+            data-testid="sort-projectName-icon"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": "28px",
+                "margin": "4px",
+                "width": "28px",
+              }
+            }
+          >
+            <span
+              className="icon button--secondary--icon-only__icon"
+              style={
+                Object {
+                  "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "height": "16px",
+                  "property": "url(some-stub-svg) center center / contain no-repeat",
+                  "width": "16px",
+                }
+              }
+            />
+          </button>
+        </div>
+        <div
+          className="table-component-header__item"
+          style={
+            Object {
+              "flex": "1.1 1 0%",
+            }
+          }
+        >
+          <div
+            className="table-component-header__text"
+          >
+            Report name
+          </div>
+          <button
+            className="button button--secondary button--secondary--icon-only"
+            data-testid="sort-reportName-icon"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": "28px",
+                "margin": "4px",
+                "width": "28px",
+              }
+            }
+          >
+            <span
+              className="icon button--secondary--icon-only__icon"
+              style={
+                Object {
+                  "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "height": "16px",
+                  "property": "url(some-stub-svg) center center / contain no-repeat",
+                  "width": "16px",
+                }
+              }
+            />
+          </button>
+        </div>
+        <div
+          className="table-component-header__item"
+          style={
+            Object {
+              "flex": "1 1 0%",
+            }
+          }
+        >
+          <div
+            className="table-component-header__text"
+          >
+            Created
+          </div>
+          <button
+            className="button button--secondary button--secondary--icon-only"
+            data-testid="sort-created-icon"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": "28px",
+                "margin": "4px",
+                "width": "28px",
+              }
+            }
+          >
+            <span
+              className="icon button--secondary--icon-only__icon"
+              style={
+                Object {
+                  "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "height": "16px",
+                  "property": "url(some-stub-svg) center center / contain no-repeat",
+                  "width": "16px",
+                }
+              }
+            />
+          </button>
+        </div>
+        <div
+          className="table-component-header__item"
+          style={
+            Object {
+              "flex": "1 1 0%",
+            }
+          }
+        >
+          <div
+            className="table-component-header__text"
+          >
+            Completed
+          </div>
+          <button
+            className="button button--secondary button--secondary--icon-only"
+            data-testid="sort-completed-icon"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": "28px",
+                "margin": "4px",
+                "width": "28px",
+              }
+            }
+          >
+            <span
+              className="icon button--secondary--icon-only__icon"
+              style={
+                Object {
+                  "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "height": "16px",
+                  "property": "url(some-stub-svg) center center / contain no-repeat",
+                  "width": "16px",
+                }
+              }
+            />
+          </button>
+        </div>
+        <div
+          className="table-component-header__item"
+          style={
+            Object {
+              "flex": "0.8 1 0%",
+            }
+          }
+        >
+          <div
+            className="table-component-header__text"
+          >
+            Count
+          </div>
+          <button
+            className="button button--secondary button--secondary--icon-only"
+            data-testid="sort-count-icon"
+            onClick={[Function]}
+            style={
+              Object {
+                "height": "28px",
+                "margin": "4px",
+                "width": "28px",
+              }
+            }
+          >
+            <span
+              className="icon button--secondary--icon-only__icon"
+              style={
+                Object {
+                  "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+                  "height": "16px",
+                  "property": "url(some-stub-svg) center center / contain no-repeat",
+                  "width": "16px",
+                }
+              }
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        className="table-component-data__container"
+      />
+    </div>
+  </div>
+  <div
+    className="table-component-pagination__container"
+  >
+    <div
+      className="table-component-pagination__pagination-content"
+    >
+      <span
+        className="table-component-pagination__text"
+      >
+        Showing
+      </span>
+      <span
+        className="table-component-pagination__text--strong"
+      >
+        1
+      </span>
+      <span
+        className="table-component-pagination__text"
+      >
+        to
+      </span>
+      <span
+        className="table-component-pagination__text--strong"
+      >
+        10 
+      </span>
+      <span
+        className="table-component-pagination__text"
+      >
+        of 0 reports
+      </span>
+      <button
+        className="button button--secondary button--secondary--icon-only"
+        data-testid="chevronLeft"
+        disabled={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "height": "32px",
+            "marginLeft": "10px",
+            "width": "32px",
+          }
+        }
+      >
+        <span
+          className="icon button--secondary--icon-only__icon button--secondary--icon-only__icon--disabled"
+          style={
+            Object {
+              "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "height": "20px",
+              "pointerEvents": "none",
+              "property": "url(some-stub-svg) center center / contain no-repeat",
+              "width": "20px",
+            }
+          }
+        />
+      </button>
+      <button
+        className="button button--secondary button--secondary--icon-only"
+        data-testid="chevronRight"
+        disabled={false}
+        onClick={[Function]}
+        style={
+          Object {
+            "height": "32px",
+            "margin": "4px",
+            "width": "32px",
+          }
+        }
+      >
+        <span
+          className="icon button--secondary--icon-only__icon"
+          style={
+            Object {
+              "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+              "height": "20px",
+              "property": "url(some-stub-svg) center center / contain no-repeat",
+              "width": "20px",
+            }
+          }
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

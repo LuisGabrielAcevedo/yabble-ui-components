@@ -1,0 +1,123 @@
+.date-picker {
+  position: relative;
+}
+.date-picker-inputs {
+  display: flex;
+}
+.date-picker-menu {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  top: 86px;
+  left: 0;
+  min-width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+  z-index: 300;
+}
+
+.date-picker-section-1 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.date-picker-section-text {
+  text-decoration: underline;
+  font-family: 'SuisseIntl Regular';
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.date-picker-section-2 {
+  flex: 1;
+  /* border-left: 1px solid #eceff3; */
+  padding: 24px 0 16px 24px;
+}
+
+.date-picker-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.date-picker-section-2-1 {
+  display: flex;
+  width: 100%;
+}
+.date-picker-calendar {
+  flex: 1;
+}
+
+.date-picker-calendar-content {
+  padding: 20px 24px 0 0;
+}
+
+.date-picker-calendar-inputs {
+  display: flex;
+}
+
+.calendar-header {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.calendar-header-day {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-header-day-text {
+  font-family: 'SuisseIntl Medium';
+}
+
+.calendar-week-days {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.calendar-week-day-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.calendar-text {
+  font-family: 'SuisseIntl Regular';
+}
+
+.calendar-week-day-text:hover {
+  background-color: #eceff3;
+}
+
+.calendar-week-day-text-interval:hover {
+  background-color: #b4cbf9;
+}
+
+.date-picker-error {
+  background-color: rgba(232, 46, 46, 0.1);
+  margin-right: 32px;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.date-picker-error-text {
+  font-family: 'SuisseIntl Regular';
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.date-picker-error-image {
+  margin-right: 10px;
+}

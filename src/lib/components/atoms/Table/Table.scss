@@ -1,0 +1,66 @@
+@import "../../../style/theme/theme";
+
+.table {
+  &__container {
+    background-color: $theme-color-absence;
+    border: 1px solid #e7eaee;
+    margin: 0 auto;
+    border-radius: 8px;
+    max-width: 1600px;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 1632px) {
+      margin: 0 32px;
+    }
+
+    @media (max-width: 940px) {
+      padding-top: 16px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0;
+      border-radius: 0px;
+    }
+  }
+
+  &__overlay-block {
+    opacity: 0.5;
+    background-color: $theme-color-absence;
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    cursor: wait;
+  }
+
+  &__scroll {
+    @media (max-width: 940px) {
+      overflow-y: hidden;
+      overflow-x: auto;
+      transform: rotateX(180deg);
+
+      &::-webkit-scrollbar {
+        height: 8px !important;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $theme-tables-scroll-scrollbar-track-background !important;
+        border-radius: 10px !important;
+        margin: 0 24px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $theme-tables-scroll-scrollbar-thumb-background !important;
+        border-radius: 10px !important;
+      }
+    }
+  }
+
+  &__scroll-content {
+    @media (max-width: 940px) {
+      width: 1300px;
+      padding-top: 16px;
+      transform: rotateX(-180deg);
+    }
+  }
+}

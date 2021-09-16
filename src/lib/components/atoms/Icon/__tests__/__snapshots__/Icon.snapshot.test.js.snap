@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Icon Default Icon 1`] = `
+<span
+  className="icon "
+  style={
+    Object {
+      "-moz-mask": "url(some-stub-svg) center center / contain no-repeat",
+      "-ms-mask": "url(some-stub-svg) center center / contain no-repeat",
+      "-o-mask": "url(some-stub-svg) center center / contain no-repeat",
+      "-webkit-mask": "url(some-stub-svg) center center / contain no-repeat",
+      "background": "#1054dd",
+      "height": "32px",
+      "property": "url(some-stub-svg) center center / contain no-repeat",
+      "width": "32px",
+    }
+  }
+/>
+`;

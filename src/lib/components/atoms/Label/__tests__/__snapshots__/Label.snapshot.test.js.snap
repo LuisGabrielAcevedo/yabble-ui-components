@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Label Default Label 1`] = `
+<div
+  className="label-container"
+>
+  <label
+    className="label "
+    htmlFor=""
+    style={Object {}}
+  >
+    First name
+  </label>
+</div>
+`;

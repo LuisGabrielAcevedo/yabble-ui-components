@@ -1,0 +1,34 @@
+@import "../../../style/settings/variables";
+@import "../../../style/theme/theme";
+
+%format-label {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  color: $theme-primary-text-color;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+
+  &__label-tag {
+    @extend %format-label;
+
+    &--disabled {
+      color: $theme-text-on-disabled;
+    }
+  }
+}
+
+.label {
+  @extend %format-label;
+
+  &--disabled {
+    color: $theme-text-on-disabled;
+  }
+}

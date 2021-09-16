@@ -1,0 +1,12 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.badge {
+  display: inline-block;
+  border-radius: $field-border-radius;
+  background-color: $theme-primary-text-color;
+  font-family: $font-family-secondary;
+  color: $theme-color-absence;
+  text-transform: capitalize;
+  padding: 2px 5px 3px;
+}

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/FieldError Default Field Error 1`] = `
+<p
+  className="field-error "
+  style={Object {}}
+>
+  This is some error text that could be placed below an input component...
+</p>
+`;

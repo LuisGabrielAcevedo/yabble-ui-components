@@ -1,0 +1,327 @@
+@import "../../../style/settings/variables";
+@import "../../../style/theme/theme";
+@import "../../../style/tools/mixins";
+
+%text-hover-underline {
+  color: $theme-button-primary-hover-background;
+  text-decoration: underline;
+  text-decoration-color: $theme-button-primary-hover-background;
+}
+
+%button-active-border {
+  background-color: $theme-button-secondary-active-background;
+  border-color: $theme-button-primary-active-background;
+  color: $theme-button-primary-active-background;
+}
+
+.button {
+  min-width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+
+  &--primary {
+    background-color: $theme-button-primary-background;
+    color: $theme-button-primary-color;
+    font-family: $font-family-primary;
+    border-radius: $field-border-radius;
+
+    &__icon {
+      background: $theme-color-absence !important;
+
+      &--disabled {
+        background: $theme-text-on-disabled !important;
+      }
+    }
+
+    &:hover {
+      background-color: $theme-button-primary-hover-background;
+    }
+
+    &:active {
+      background-color: $theme-button-primary-active-background;
+      box-shadow: $theme-primary-focus 0px 1px 4px,
+        $theme-primary-focus 0px 0px 0px 3px;
+    }
+
+    &:focus-visible {
+      background-color: $theme-button-primary-active-background;
+    }
+
+    &:disabled {
+      background-color: $theme-button-primary-disabled-background;
+      color: $theme-button-primary-disabled-color;
+      cursor: not-allowed;
+    }
+
+    &--loading {
+      background-color: $theme-button-primary-active-background !important;
+    }
+
+    &--danger {
+      background-color: $theme-button-primary-danger-background;
+      color: $theme-color-absence;
+      font-family: $font-family-primary;
+      border-radius: $field-border-radius;
+
+      &:hover {
+        background-color: $theme-button-primary-danger-hover-background;
+      }
+
+      &:active {
+        background-color: $theme-button-primary-danger-active-background;
+        box-shadow: $theme-primary-focus 0px 1px 4px,
+          $theme-primary-focus 0px 0px 0px 3px;
+      }
+
+      &:focus-visible {
+        background-color: $theme-button-primary-danger-active-background;
+      }
+
+      &:disabled {
+        background-color: $theme-button-primary-disabled-background;
+        color: $theme-button-primary-disabled-color;
+        cursor: not-allowed;
+      }
+
+      &--loading {
+        background-color: $theme-button-primary-danger-active-background !important;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $theme-button-secondary-color;
+    font-family: $font-family-primary;
+    border: 1px solid $theme-button-primary-border;
+    border-radius: $field-border-radius;
+
+    &:hover {
+      background-color: $theme-button-secondary-hover-background;
+    }
+
+    &:focus-visible {
+      @extend %button-active-border;
+    }
+
+    &:active {
+      @extend %button-active-border;
+      box-shadow: $theme-primary-focus 0px 1px 4px,
+        $theme-primary-focus 0px 0px 0px 3px;
+    }
+
+    &:disabled {
+      background-color: $theme-button-secondary-disabled-background;
+      color: $theme-button-primary-disabled-color;
+      border-color: $theme-button-primary-border-color;
+      cursor: not-allowed;
+    }
+
+    &--loading {
+      background-color: $theme-button-secondary-loading-background !important;
+      border-color: $theme-button-primary-active-background !important;
+    }
+
+    &--icon-only {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      min-width: auto;
+      background-color: transparent;
+      border: none;
+      outline: none;
+
+      &__icon {
+        background: $theme-primary-text-color !important;
+
+        &--disabled {
+          background: $theme-text-on-disabled !important;
+        }
+      }
+
+      &:hover {
+        background-color: $theme-button-secondary-icon-only-hover-background;
+      }
+
+      &:active {
+        background-color: $theme-button-secondary-icon-only-active-background;
+        border-color: none;
+        color: initial;
+        box-shadow: none;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        background: transparent;
+        border-color: none;
+        color: initial;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &--tertiary {
+    &--icon-only {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background-color: transparent;
+      border: 1px solid transparent;
+
+      &__icon {
+        background: $theme-primary-color !important;
+      }
+
+      &:hover {
+        background-color: rgba(44, 108, 237, 0.12);
+      }
+
+      &:focus-visible {
+        background-color: $theme-button-secondary-active-background;
+      }
+
+      &:active {
+        background-color: $theme-button-secondary-active-background;
+        box-shadow: $theme-primary-focus 0px 1px 4px,
+          $theme-primary-focus 0px 0px 0px 3px;
+      }
+
+      &--selected {
+        box-shadow: $theme-primary-focus 0px 1px 4px,
+          $theme-primary-focus 0px 0px 0px 3px;
+        background-color: rgba(44, 108, 237, 0.12);
+        cursor: auto;
+
+        &:hover,
+        &:focus-visible,
+        &:active {
+          background-color: rgba(44, 108, 237, 0.12);
+        }
+      }
+    }
+  }
+
+  &--subtle {
+    background-color: $theme-button-secondary-icon-only-hover-background;
+    color: $theme-secondary-text-color;
+    font-family: $font-family-primary;
+    border-radius: $field-border-radius;
+
+    &:hover {
+      background-color: $theme-button-primary-disabled-background;
+    }
+
+    &:focus-visible {
+      background-color: $theme-button-secondary-icon-only-active-background;
+    }
+
+    &:active {
+      background-color: $theme-button-secondary-icon-only-active-background;
+      box-shadow: $theme-primary-focus 0px 1px 4px,
+        $theme-primary-focus 0px 0px 0px 3px;
+    }
+
+    &:disabled {
+      background-color: $theme-button-primary-disabled-background;
+      color: $theme-button-primary-disabled-color;
+      cursor: not-allowed;
+    }
+  }
+
+  &--subtle-icon-only {
+    border: 1px solid $theme-button-primary-disabled-background;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $theme-button-primary-disabled-background;
+    }
+
+    &:active {
+      background-color: $theme-button-subtle-active-background;
+    }
+
+    &:disabled {
+      background-color: $theme-button-primary-disabled-background;
+      cursor: not-allowed;
+    }
+
+    &__icon {
+      background: $theme-primary-text-color !important;
+
+      &--disabled {
+        background: $theme-text-on-disabled !important;
+      }
+    }
+  }
+
+  &--subtle-link {
+    color: $theme-secondary-text-color;
+    height: 20px;
+    font-family: $font-family-primary;
+    background-color: transparent;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration-color: $theme-button-primary-disabled-color;
+    }
+
+    &:focus-visible {
+      color: $theme-primary-text-color;
+      text-decoration: none;
+    }
+
+    &:disabled {
+      text-decoration: none;
+      color: $theme-button-primary-disabled-color;
+      cursor: not-allowed;
+    }
+  }
+
+  &--link {
+    min-width: auto;
+    color: $theme-primary-color;
+    height: 20px;
+    font-family: $font-family-primary;
+    border: 2px solid transparent;
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      @extend %text-hover-underline;
+    }
+
+    &:active {
+      @extend %text-hover-underline;
+      border-color: $theme-primary-focus;
+      border-radius: 2px;
+    }
+
+    &:disabled {
+      text-decoration: none;
+      color: $theme-button-primary-disabled-color;
+      cursor: not-allowed;
+    }
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+}

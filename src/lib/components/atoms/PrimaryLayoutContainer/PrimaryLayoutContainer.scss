@@ -1,0 +1,40 @@
+.primary-layout-container {
+  padding-top: 56px;
+  position: relative;
+  &__background {
+    position: absolute;
+    overflow: hidden;
+    height: 306px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  &__rotate {
+    transform: scale(3.5);
+  }
+  &__row {
+    display: flex;
+    height: 200%;
+    transform: rotate(-40deg);
+  }
+  &__section1 {
+    background-color: #50b167;
+    flex: 1.15;
+    @media (max-width: 1400px) {
+      flex: 1.2;
+    }
+  }
+  &__section2 {
+    background-color: #b7f7cc;
+    flex: 1;
+  }
+  &__content {
+    position: absolute;
+    padding-top: 116px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+}

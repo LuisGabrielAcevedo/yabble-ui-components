@@ -1,0 +1,43 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+@import '../../../style/tools/mixins';
+
+.popup-list {
+  &__content {
+    position: absolute;
+    background-color: $theme-color-absence;
+    min-height: 10px;
+    top: 30px;
+    right: 0;
+    width: 140px;
+    z-index: 100;
+    border-radius: $field-border-radius * 2;
+    filter: drop-shadow(0px 3px 10px rgba(24, 30, 38, 0.15));
+    padding: 4px;
+
+    &__option {
+      @include flex-center;
+      background-color: $theme-color-absence;
+      outline: none;
+      border: none;
+      height: 32px;
+      width: 100%;
+      cursor: pointer;
+      font-family: $font-family-primary;
+      border-radius: $field-border-radius;
+
+      &:hover {
+        background-color: $popup-option-hover-background;
+      }
+
+      &:focus-visible {
+        background-color: $popup-option-focus-visible-background;
+        border: 1px solid transparent;
+      }
+
+      &:active {
+        background-color: $popup-option-active-background;
+      }
+    }
+  }
+}

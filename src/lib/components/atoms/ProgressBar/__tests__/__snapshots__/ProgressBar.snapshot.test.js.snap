@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/ProgressBar Progress Bar Default 1`] = `
+<div
+  className="progress-bar__container progress-bar__container--finished"
+  data-testid="progress-bar__container"
+>
+  <div
+    className="progress-bar__bar"
+    style={
+      Object {
+        "marginLeft": "-100%",
+      }
+    }
+  >
+    <div
+      className="progress-bar__bar__shadow"
+    />
+  </div>
+</div>
+`;

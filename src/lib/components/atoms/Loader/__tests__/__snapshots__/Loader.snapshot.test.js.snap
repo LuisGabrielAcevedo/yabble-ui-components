@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/Loader Loader Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "display": "flex",
+      "height": "100vh",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="loader-main loader-main--regular "
+    style={Object {}}
+  >
+    <svg
+      className="loader-main__svg"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="loader-main__rectangle "
+        d="M118.652 0.00362863L0 118.656L8.40668 127.062L127.059 8.4103L118.652 0.00362863Z"
+      />
+      <g
+        className="loader-main__circle-wrapper"
+      >
+        <path
+          className="loader-main__circle "
+          d="M39.749 19.8149C39.749 30.7653 30.8844 39.6298 19.9341 39.6298C8.98371 39.6298 0.119141 30.7653 0.119141 19.8149C0.119141 8.86457 8.98371 0 19.9341 0C30.8844 0 39.749 8.86457 39.749 19.8149Z"
+        />
+      </g>
+    </svg>
+  </div>
+</div>
+`;

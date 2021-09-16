@@ -1,0 +1,81 @@
+@import "../../../style/settings/variables";
+@import "../../../style/theme/theme";
+@import "../../../style/tools/mixins";
+
+.select {
+  border-radius: $field-border-radius;
+  font-family: $font-family-primary;
+  font-size: $font-size-paragraph;
+  padding: 8px 26px 8px 12px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-width: 1px;
+  border-style: solid;
+  transition-duration: 0.3s;
+  @include vendor-prefix('appearance', 'none');
+
+  &__option {
+    color: $theme-input-primary-text-color;
+    padding: 6px;
+    z-index: 10;
+    font-family: $font-family-primary;
+    font-size: $font-size-paragraph;  
+  }
+
+  &__icon {
+    position: absolute;
+    pointer-events: none;
+    right: 8px;
+    top: 50px;
+
+    &__path {
+      stroke: $theme-input-primary-text-color;
+      
+      &--disabled {
+        stroke: $theme-text-on-disabled;
+      }
+    }
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &--primary {
+    border-color: $theme-input-primary-border-color;
+    background-color: $theme-input-primary-background;
+    color: $theme-input-primary-placeholder-color;
+
+    &:hover {
+      border-color: $theme-input-secondary-border-color;
+    }
+
+    &:focus {
+      border-color: $theme-primary-color;
+      box-shadow: $theme-primary-focus 0px 1px 4px,
+        $theme-primary-focus 0px 0px 0px 3px;
+      outline: 0 none;
+      background-color: $theme-input-focus-background;
+    }
+
+    &:disabled {
+      border-color: $theme-input-disabled-border-color;
+      cursor: not-allowed;
+      pointer-events: all;
+    }
+  }
+
+  &--error {
+    border-color: $theme-input-error-text-color;
+  }
+
+  &--disabled {
+    color: $theme-text-on-disabled;
+  }
+
+  &--with-value {
+    color: $theme-input-primary-text-color;
+  }
+}

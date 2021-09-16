@@ -1,0 +1,43 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+@import '../../../style/tools/mixins';
+
+.response {
+  border: 1px solid $responses-border-color;
+  border-radius: $field-border-radius;
+  padding: 16px;
+  margin-bottom: 4px;
+
+  &__text {
+    word-break: break-all;
+    font-family: $font-family-primary;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $responses-text-color;
+    margin: 0px 0px 12px 0px;
+    text-align: left;
+    word-break: normal;
+  }
+
+  &__tag {
+    font-family: $font-family-primary;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: $responses-text-color;
+    display: inline;
+    border: 1px solid $responses-tag-border-color;
+    border-radius: $field-border-radius;
+    padding: 4px;
+    margin-right: 4px;
+  }
+
+  &__face-tag-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2em;
+  }
+}

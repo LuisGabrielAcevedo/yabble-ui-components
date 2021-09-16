@@ -1,0 +1,551 @@
+.basic-multi-select {
+  flex-grow: 1 !important;
+  margin-left: 8px;
+}
+
+.flag-icon2-container {
+  height: 22px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-icon2:hover {
+  fill: #333b49;
+}
+
+.flag-icon2 {
+  cursor: pointer;
+  fill: #9ea7b2;
+}
+
+.flag-icon-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  outline: none;
+}
+
+.flag-icon-container:active {
+  background-color: rgba(44, 108, 237, 0.18) !important;
+}
+
+.flag-icon-container:hover {
+  background-color: rgba(44, 108, 237, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-icon {
+  fill: #2c6ced;
+}
+
+.select_Gender__control {
+  margin-top: 42px;
+}
+
+.select_Gender__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Gender__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Gender__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Gender__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Gender__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Gender__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Gender__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Gender__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Gender__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Gender__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Gender__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Age__control {
+  margin-top: 42px;
+}
+
+.select_Age__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Age__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Age__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Age__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Age__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Age__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Age__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Age__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Age__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Age__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Age__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Region__control {
+  margin-top: 42px;
+}
+
+.select_Region__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Region__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Region__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Region__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Region__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Region__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Region__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Region__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Region__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Region__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Region__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Ethnicity__control {
+  margin-top: 42px;
+}
+
+.select_Ethnicity__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Ethnicity__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Ethnicity__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Ethnicity__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Ethnicity__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Ethnicity__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Ethnicity__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Ethnicity__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Ethnicity__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Ethnicity__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Ethnicity__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Household__control {
+  margin-top: 42px;
+}
+
+.select_Household__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Household__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Household__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Household__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Household__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Household__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Household__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Household__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Household__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Household__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Household__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Variable__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Variable__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Variable__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Variable__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Variable__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Variable__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Variable__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Variable__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Variable__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Variable__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Variable__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select_Questions__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select_Questions__indicators {
+  align-items: flex-start !important;
+}
+
+.select_Questions__indicator-separator {
+  height: 22px !important;
+}
+
+.select_Questions__control--is-disabled {
+  border: 1px solid #f8f9fd !important;
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
+.select_Questions__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select_Questions__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select_Questions__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select_Questions__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select_Questions__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select_Questions__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select_Questions__placeholder {
+  color: #9ea7b2 !important;
+}
+
+.select__control--is-focused {
+  border: 1px solid #2c6ced !important;
+  box-shadow: #b4cbf9 0px 1px 4px, #b4cbf9 0px 0px 0px 3px !important;
+  outline: 0 none !important;
+  transition-duration: 0.4s !important;
+  background-color: white !important;
+}
+
+.select__indicators {
+  align-items: flex-start !important;
+}
+
+.select__indicator-separator {
+  height: 22px !important;
+}
+
+.select__value-container {
+  width: 100px !important;
+  padding: 2px 2px 2px 2px !important;
+  font-family: 'SuisseIntl Regular' !important;
+}
+
+.select__multi-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+  background-color: #e4ebfb !important;
+  margin: 2px !important;
+  border-radius: 4px !important;
+}
+
+.select__multi-value__label {
+  color: #2c6ced !important;
+  font-size: 14px !important;
+}
+
+.select__multi-value__remove {
+  background-color: #e4ebfb;
+  margin-left: 0 !important;
+}
+
+.select__multi-value__remove:hover {
+  background-color: #e4ebfb !important;
+}
+
+.select__control:hover {
+  border: 1px solid #bfc6d2;
+  transition-duration: 0.3s;
+}
+
+.select__placeholder {
+  color: #9ea7b2 !important;
+}

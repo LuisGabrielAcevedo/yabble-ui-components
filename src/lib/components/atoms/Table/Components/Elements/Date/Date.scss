@@ -1,0 +1,17 @@
+@import "../../../../../../style/settings/variables";
+
+.table-element-date {
+  &__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: $font-family-primary;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

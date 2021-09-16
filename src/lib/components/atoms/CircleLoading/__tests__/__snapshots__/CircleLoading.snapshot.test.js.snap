@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Yabble/Atoms/CircleLoading Circle 1`] = `
+<div
+  className="circle-loading"
+>
+  <div
+    className="circle-loading__loader-spinner"
+    style={
+      Object {
+        "borderColor": "#2c6ced",
+        "borderTopColor": "#2c6ced",
+      }
+    }
+  />
+  <span
+    className="circle-loading__text"
+    style={
+      Object {
+        "color": "#2c6ced",
+      }
+    }
+  >
+    loading...
+  </span>
+</div>
+`;

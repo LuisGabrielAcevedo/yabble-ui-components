@@ -1,0 +1,10 @@
+@import '../../../style/settings/variables';
+@import '../../../style/theme/theme';
+
+.card {
+  max-width: 734px;
+  padding: 32px;
+  background-color: $theme-color-absence;
+  border-radius: $field-border-radius * 2;
+  margin-bottom: 32px;
+}
