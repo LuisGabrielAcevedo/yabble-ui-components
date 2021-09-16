@@ -20,7 +20,7 @@ const PrimaryHeader = ({
   title,
   backLabel,
   backClickEvent = () => {},
-  showLogo,
+  logo,
   showLogoDivider,
   showBackDivider = true,
   leftComponent,
@@ -30,7 +30,7 @@ const PrimaryHeader = ({
   return (
     <div className="primary-header">
       <div className="primary-header__left-section">
-        {title && !showLogo && (
+        {title && !logo && (
           <span className="primary-header__title">{title}</span>
         )}
         {backLabel && (
@@ -40,9 +40,9 @@ const PrimaryHeader = ({
             {...{ backClickEvent }}
           />
         )}
-        {showLogo && (
+        {logo && (
           <img
-            src={Illustrations.LogoDark}
+            src={logo}
             alt="Hey Yabble Logo"
             className="primary-header__logo"
           />
