@@ -104,7 +104,7 @@ const DotsLoading = ({
   }));
 };
 
-var lightCopyIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fillRule='evenodd' clipRule='evenodd' d='M5.5 4H5V4.5V16.592C5 16.8682 5.22386 17.092 5.5 17.092C5.77614 17.092 6 16.8682 6 16.592V5H15.4562C15.7323 5 15.9562 4.77614 15.9562 4.5C15.9562 4.22386 15.7323 4 15.4562 4H5.5ZM8.67388 6.91166H8.17388V7.41166V19.5037V20.0037H8.67388H18.6301H19.1301V19.5037V7.41166V6.91166H18.6301H8.67388ZM9.17388 19.0037V7.91166H18.1301V19.0037H9.17388Z' fill='white'/%3e%3c/svg%3e\";\n  export default img;";
+var lightCopyIcon = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fillRule%3D%22evenodd%22%20clipRule%3D%22evenodd%22%20d%3D%22M5.5%204H5V4.5V16.592C5%2016.8682%205.22386%2017.092%205.5%2017.092C5.77614%2017.092%206%2016.8682%206%2016.592V5H15.4562C15.7323%205%2015.9562%204.77614%2015.9562%204.5C15.9562%204.22386%2015.7323%204%2015.4562%204H5.5ZM8.67388%206.91166H8.17388V7.41166V19.5037V20.0037H8.67388H18.6301H19.1301V19.5037V7.41166V6.91166H18.6301H8.67388ZM9.17388%2019.0037V7.91166H18.1301V19.0037H9.17388Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E\"";
 
 const Icon = ({
   size = 24,
@@ -9016,7 +9016,7 @@ const TextArea = ({
   }));
 };
 
-var addIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='11.5334' y='19' width='14' height='0.933333' rx='0.466667' transform='rotate(-90 11.5334 19)' fill='%235A616B'/%3e%3crect x='5' y='11.5333' width='14' height='0.933333' rx='0.466667' fill='%235A616B'/%3e%3c/svg%3e\";\n  export default img;";
+var addIcon = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%2211.5334%22%20y%3D%2219%22%20width%3D%2214%22%20height%3D%220.933333%22%20rx%3D%220.466667%22%20transform%3D%22rotate%28-90%2011.5334%2019%29%22%20fill%3D%22%235A616B%22%2F%3E%3Crect%20x%3D%225%22%20y%3D%2211.5333%22%20width%3D%2214%22%20height%3D%220.933333%22%20rx%3D%220.466667%22%20fill%3D%22%235A616B%22%2F%3E%3C%2Fsvg%3E\"";
 
 const Menu = ({
   filters,
@@ -9294,7 +9294,7 @@ const isTheSameMonth = (date1, date2) => {
   return _date1Month === _date2Month && _date1Year === _date2Year;
 };
 
-var errorIcon = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='7.5' stroke='%23D62E2E'/%3e%3cpath fillRule='evenodd' clipRule='evenodd' d='M15.8669 8.89866C16.0625 8.70436 16.0713 8.38016 15.8864 8.17455C15.7014 7.96894 15.3929 7.95978 15.1973 8.15409L12.0076 11.3216L8.84172 8.16556C8.64641 7.97086 8.33783 7.97935 8.1525 8.18454C7.96716 8.38973 7.97525 8.71391 8.17056 8.90861L11.2979 12.0263L8.166 15.1365C7.97033 15.3308 7.96161 15.655 8.14653 15.8606C8.33144 16.0662 8.63996 16.0754 8.83563 15.8811L12.0063 12.7325L15.1636 15.88C15.3589 16.0747 15.6675 16.0662 15.8528 15.861C16.0381 15.6558 16.0301 15.3317 15.8347 15.1369L12.7159 12.0278L15.8669 8.89866Z' fill='%23D62E2E'/%3e%3c/svg%3e\";\n  export default img;";
+var errorIcon = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%227.5%22%20stroke%3D%22%23D62E2E%22%2F%3E%3Cpath%20fillRule%3D%22evenodd%22%20clipRule%3D%22evenodd%22%20d%3D%22M15.8669%208.89866C16.0625%208.70436%2016.0713%208.38016%2015.8864%208.17455C15.7014%207.96894%2015.3929%207.95978%2015.1973%208.15409L12.0076%2011.3216L8.84172%208.16556C8.64641%207.97086%208.33783%207.97935%208.1525%208.18454C7.96716%208.38973%207.97525%208.71391%208.17056%208.90861L11.2979%2012.0263L8.166%2015.1365C7.97033%2015.3308%207.96161%2015.655%208.14653%2015.8606C8.33144%2016.0662%208.63996%2016.0754%208.83563%2015.8811L12.0063%2012.7325L15.1636%2015.88C15.3589%2016.0747%2015.6675%2016.0662%2015.8528%2015.861C16.0381%2015.6558%2016.0301%2015.3317%2015.8347%2015.1369L12.7159%2012.0278L15.8669%208.89866Z%22%20fill%3D%22%23D62E2E%22%2F%3E%3C%2Fsvg%3E\"";
 
 const getDatesBetweenDates = (startDate, endDate) => {
   let dates = [];
@@ -9910,9 +9910,9 @@ const DatePicker = props => {
   }))))));
 };
 
-var arrowDown = "var img = \"data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.27637 3.33333L8.27637 12.6667' stroke='%23181E26' strokeLinecap='round'/%3e%3cpath d='M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
+var arrowDown = "export default \"data:image/svg+xml,%3Csvg%20%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M8.27637%203.33333L8.27637%2012.6667%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M4.45703%209.10449L8.22827%2012.8757L11.9995%209.10449%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3C%2Fsvg%3E\"";
 
-var arrowUp = "var img = \"data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' transform='rotate(180)'%3e%3cpath d='M8.27637 3.33333L8.27637 12.6667' stroke='%23181E26' strokeLinecap='round'/%3e%3cpath d='M4.45703 9.10449L8.22827 12.8757L11.9995 9.10449' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
+var arrowUp = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20transform%3D%5Cirotate%28180%29%5Ci%3E%3Cpath%20d%3D%22M8.27637%203.33333L8.27637%2012.6667%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M4.45703%209.10449L8.22827%2012.8757L11.9995%209.10449%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3C%2Fsvg%3E\"";
 
 const iconButtonStyle$1 = {
   height: '28px',
@@ -10092,9 +10092,9 @@ function Data(props) {
   }))));
 }
 
-var chevronLeft = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15 6L9 12L15 18' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
+var chevronLeft = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M15%206L9%2012L15%2018%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3C%2Fsvg%3E\"";
 
-var chevronRight = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 18L15 12L9 6' stroke='%23181E26' strokeLinecap='round'/%3e%3c/svg%3e\";\n  export default img;";
+var chevronRight = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M9%2018L15%2012L9%206%22%20stroke%3D%22%23181E26%22%20strokeLinecap%3D%22round%22%2F%3E%3C%2Fsvg%3E\"";
 
 const iconButtonLeftStyle = {
   height: "32px",
@@ -10730,7 +10730,7 @@ const ProgressBar = ({
   })));
 };
 
-var arrowLeft = "var img = \"data:image/svg+xml,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M19 12.4142L5 12.4142' stroke='%2367718B' stroke-linecap='round'/%3e%3cpath d='M10.3433 6.68628L4.68641 12.3431L10.3433 18' stroke='%2367718B' stroke-linecap='round'/%3e%3c/svg%3e\";\n  export default img;";
+var arrowLeft = "export default \"data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M19%2012.4142L5%2012.4142%22%20stroke%3D%22%2367718B%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M10.3433%206.68628L4.68641%2012.3431L10.3433%2018%22%20stroke%3D%22%2367718B%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E\"";
 
 const BackButton = ({
   label,
